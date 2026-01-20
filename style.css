@@ -398,6 +398,10 @@ a {
     background-color: #010101;
 }
 
+.btn-sns.line {
+    background-color: #06C755;
+}
+
 /* Footer */
 .main-footer {
     background-color: white;
