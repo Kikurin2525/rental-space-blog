@@ -1,0 +1,21 @@
+# ======================
+# Ignore everything by default
+# ======================
+*
+
+# ======================
+# Allow only blog files
+# ======================
+!.gitignore
+!index.html
+!style.css
+!script.js
+!assets/
+!assets/**
+!articles/
+!articles/**
+
+# ======================
+# macOS
+# ======================
+.DS_Store
