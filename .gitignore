@@ -1,21 +1,24 @@
 # ======================
-# Ignore everything by default
+# 1. すべてを無視
 # ======================
 *
+.*
 
 # ======================
-# Allow only blog files
+# 2. ブログ公開に必要なファイルのみ許可 (Allowlist)
 # ======================
 !.gitignore
 !index.html
 !style.css
 !script.js
+!CNAME
 !assets/
 !assets/**
 !articles/
 !articles/**
 
 # ======================
-# macOS
+# 3. macOS固有のファイルは常に除外
 # ======================
 .DS_Store
+
