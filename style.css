@@ -402,6 +402,14 @@ a {
     background-color: #06C755;
 }
 
+.btn-sns.youtube {
+    background-color: #FF0000;
+}
+
+.btn-sns.spotify {
+    background-color: #1DB954;
+}
+
 /* Footer */
 .main-footer {
     background-color: white;
