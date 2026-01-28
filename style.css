@@ -823,3 +823,39 @@ blockquote.tip-box strong {
         font-size: 1.1rem;
     }
 }
+
+/* note Link Button */
+.note-cta {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.note-cta p {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-note-link {
+    display: inline-block;
+    background-color: #2cb696;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(44, 182, 150, 0.3);
+}
+
+.btn-note-link:hover {
+    background-color: #25a084;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(44, 182, 150, 0.4);
+    color: white;
+}
