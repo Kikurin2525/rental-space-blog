@@ -72,154 +72,356 @@
     <main class="container">
         <div class="main-layout">
             <section class="content-area">
+                <nav class="category-menu">
+                    <button class="category-tile" onclick="switchCategory('beginning', '脱サラの道のり')">
+                        <img src="assets/category-beginning.png" alt="脱サラの道のり">
+                        <span class="label">脱サラの道のり</span>
+                    </button>
+                    <button class="category-tile" onclick="switchCategory('marketing', '運営・集客面')">
+                        <img src="assets/category-marketing.png" alt="運営・集客面">
+                        <span class="label">運営・集客面</span>
+                    </button>
+                    <button class="category-tile" onclick="switchCategory('interior', '物件選び・内装')">
+                        <img src="assets/category-interior.png" alt="物件選び・内装">
+                        <span class="label">物件選び・内装</span>
+                    </button>
+                    <button class="category-tile" onclick="switchCategory('recommendations', '収益・おすすめ')">
+                        <img src="assets/category-recommendations.png" alt="収益・おすすめ">
+                        <span class="label">収益・おすすめ</span>
+                    </button>
+                </nav>
 
-                <section class="latest-posts">
+                <section class="latest-posts" id="latest-posts-anchor">
                     <div class="section-title-tab">
                         <button class="active">最新記事</button>
                     </div>
-                    <div class="post-list">
-                        <article class="post-card">
-                            <a href="articles/2026-01-28-rental-studio-regular-use.html" class="post-thumb">
-                                <img src="assets/cover-2026-01-28.jpg" alt="ダンススタジオの定期利用を増やす戦略" class="post-thumb-img">
-                                <span class="category-badge">ノウハウ</span>
-                            </a>
-                            <div class="post-info">
-                                <h2><a
-                                        href="articles/2026-01-28-rental-studio-regular-use.html">安定経営の鍵！ダンススタジオの定期利用を増やす5つの戦略</a>
-                                </h2>
-                                <time datetime="2026-01-28">2026.01.28</time>
-                                <p>予約が勝手に埋まっていく「サブスク化」の仕組みとは？割引制度や荷物預かりのメリット、具体的な営業手法まで、安定運営のためのノウハウを公開します。</p>
-                            </div>
-                        </article>
-                        <article class="post-card">
-                            <a href="articles/2026-01-27-rental-space-hp-creation.html" class="post-thumb">
-                                <img src="assets/cover-2026-01-27.jpg" alt="公式HP作成方法" class="post-thumb-img">
-                                <span class="category-badge">ノウハウ</span>
-                            </a>
-                            <div class="post-info">
-                                <h2><a
-                                        href="articles/2026-01-27-rental-space-hp-creation.html">【手数料30%を削減】レンタルスペースの公式HP作成方法</a>
-                                </h2>
-                                <time datetime="2026-01-27">2026.01.27</time>
-                                <p>リピーターが増えるほど重要になる公式HP。30%もの予約手数料を削減し、独自の予約システムを構築するための3つのアプローチを解説します。</p>
-                            </div>
-                        </article>
-                        <article class="post-card">
-                            <a href="articles/2026-01-26-rental-space-marketing.html" class="post-thumb">
-                                <img src="assets/cover-2026-01-26.png" alt="レンタルスペースの集客方法 完全ガイド" class="post-thumb-img">
-                                <span class="category-badge">ノウハウ</span>
-                            </a>
-                            <div class="post-info">
-                                <h2><a href="articles/2026-01-26-rental-space-marketing.html">レンタルスペースの集客方法 完全ガイド</a>
-                                </h2>
-                                <time datetime="2026-01-26">2026.01.26</time>
-                                <p>「スペースを作ったけど予約が入らない」そんな悩みを解決する集客ノウハウを徹底解説。ポータルサイトの活用から、自社HP誘導、Web広告、LINE運用まで公開します。</p>
-                            </div>
-                        </article>
-                        <article class="post-card">
-                            <a href="articles/2026-01-25-rental-space-profit.html" class="post-thumb">
-                                <img src="assets/cover-2026-01-25.jpg" alt="レンタルスペース運営の収益性" class="post-thumb-img">
-                                <span class="category-badge">ノウハウ</span>
-                            </a>
-                            <div class="post-info">
-                                <h2><a href="articles/2026-01-25-rental-space-profit.html">レンタルスペースの収益を公開（月10万円）</a>
-                                </h2>
-                                <time datetime="2026-01-25">2026.01.25</time>
-                                <p>1店舗あたり月10万円の利益は本当？初期投資80万円〜150万円で、1年〜1年半で回収できるレンタルスペース運営のリアルな数字を公開します。</p>
-                            </div>
-                        </article>
-                        <article class="post-card">
-                            <a href="articles/2026-01-24-hidden-side-hustle.html" class="post-thumb">
-                                <img src="assets/cover-2026-01-24-2.png" alt="Google検索数40の衝撃" class="post-thumb-img">
-                                <span class="category-badge">ノウハウ</span>
-                            </a>
-                            <div class="post-info">
-                                <h2><a
-                                        href="articles/2026-01-24-hidden-side-hustle.html">【Google検索数が月40回】「誰も調べない副業」が美味しい</a>
-                                </h2>
-                                <time datetime="2026-01-24">2026.01.24</time>
-                                <p>「副業」で検索しても出てこない副業がある？ライバル不在のブルーオーシャン「レンタルスペース」の検索ボリュームから見る、勝てる理由を解説します。</p>
-                            </div>
-                        </article>
-                        <article class="post-card">
-                            <a href="articles/2026-01-24-how-i-quit-my-job.html" class="post-thumb">
-                                <img src="assets/cover-2026-01-24.png" alt="さんが脱サラできた方法" class="post-thumb-img">
-                                <span class="category-badge">ノウハウ</span>
-                            </a>
-                            <div class="post-info">
-                                <h2><a href="articles/2026-01-24-how-i-quit-my-job.html">私が脱サラできた方法</a></h2>
-                                <time datetime="2026-01-24">2026.01.24</time>
-                                <p>凡人でも会社を辞められた「月10万円×◯店舗」の単純な計算式を公開。なぜレンタルスペースなら脱サラ可能なのか？そのロジックを解説します。</p>
-                            </div>
-                        </article>
-                        <article class="post-card">
-                            <a href="articles/2026-01-23-winning-property-search-methods.html" class="post-thumb">
-                                <img src="assets/SCR-20260123-irmr.jpeg" alt="まずアットホームでOK！レンタルスペースで儲かる物件を見つける全手順"
-                                    class="post-thumb-img">
-                                <span class="category-badge">物件探し</span>
-                            </a>
-                            <div class="post-info">
-                                <h2><a
-                                        href="articles/2026-01-23-winning-property-search-methods.html">まずアットホームでOK！レンタルスペースで儲かる物件を見つける全手順</a>
-                                </h2>
-                                <time datetime="2026-01-23">2026.01.23</time>
-                                <p>良い物件が見つからないと悩んでいませんか？プロが実践しているアットホームや仲介業者を活用した「勝てる物件」の探し方を公開します。</p>
-                            </div>
-                        </article>
-                        <article class="post-card">
-                            <a href="articles/2026-01-23-profit-over-100m-recommendations.html" class="post-thumb">
-                                <img src="assets/SCR-20260123-foer.png" alt="収益1億超えのプロがいま出店したい！レンタルスペースの4ジャンル"
-                                    class="post-thumb-img">
-                                <span class="category-badge">ノウハウ</span>
-                            </a>
-                            <div class="post-info">
-                                <h2><a
-                                        href="articles/2026-01-23-profit-over-100m-recommendations.html">収益1億超えのプロがいま出店したい！レンタルスペースの4ジャンル</a>
-                                </h2>
-                                <time datetime="2026-01-23">2026.01.23</time>
-                                <p>累計21店舗、利益1億円を突破したプロが本音で語る、今こそ参入すべき注目の4ジャンル。リピート率抜群のダンス系から、爆伸び中のターゲット特化型スタジオまで、成功の鍵を徹底解説。
-                                </p>
-                            </div>
-                        </article>
-                        <article class="post-card">
+                    <div class="post-list-container active" id="posts-latest">
+                        <div class="post-list">
+                            <article class="post-card">
+                                <a href="articles/2026-01-28-rental-studio-regular-use.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-28.jpg" alt="ダンススタジオの定期利用を増やす戦略"
+                                        class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-28-rental-studio-regular-use.html">安定経営の鍵！ダンススタジオの定期利用を増やす5つの戦略</a>
+                                    </h2>
+                                    <time datetime="2026-01-28">2026.01.28</time>
+                                    <p>予約が勝手に埋まっていく「サブスク化」の仕組みとは？割引制度や荷物預かりのメリット、具体的な営業手法まで、安定運営のためのノウハウを公開します。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-27-rental-space-hp-creation.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-27.jpg" alt="公式HP作成方法" class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-27-rental-space-hp-creation.html">【手数料30%を削減】レンタルスペースの公式HP作成方法</a>
+                                    </h2>
+                                    <time datetime="2026-01-27">2026.01.27</time>
+                                    <p>リピーターが増えるほど重要になる公式HP。30%もの予約手数料を削減し、独自の予約システムを構築するための3つのアプローチを解説します。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-26-rental-space-marketing.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-26.png" alt="レンタルスペースの集客方法 完全ガイド"
+                                        class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a href="articles/2026-01-26-rental-space-marketing.html">レンタルスペースの集客方法
+                                            完全ガイド</a>
+                                    </h2>
+                                    <time datetime="2026-01-26">2026.01.26</time>
+                                    <p>「スペースを作ったけど予約が入らない」そんな悩みを解決する集客ノウハウを徹底解説。ポータルサイトの活用から、自社HP誘導、Web広告、LINE運用まで公開します。
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-25-rental-space-profit.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-25.jpg" alt="レンタルスペース運営の収益性" class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a href="articles/2026-01-25-rental-space-profit.html">レンタルスペースの収益を公開（月10万円）</a>
+                                    </h2>
+                                    <time datetime="2026-01-25">2026.01.25</time>
+                                    <p>1店舗あたり月10万円の利益は本当？初期投資80万円〜150万円で、1年〜1年半で回収できるレンタルスペース運営のリアルな数字を公開します。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-24-hidden-side-hustle.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-24-2.png" alt="Google検索数40の衝撃"
+                                        class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-24-hidden-side-hustle.html">【Google検索数が月40回】「誰も調べない副業」が美味しい</a>
+                                    </h2>
+                                    <time datetime="2026-01-24">2026.01.24</time>
+                                    <p>「副業」で検索しても出てこない副業がある？ライバル不在েরブルーオーシャン「レンタルスペース」の検索ボリュームから見る、勝てる理由を解説します。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-24-how-i-quit-my-job.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-24.png" alt="さんが脱サラできた方法" class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a href="articles/2026-01-24-how-i-quit-my-job.html">私が脱サラできた方法</a></h2>
+                                    <time datetime="2026-01-24">2026.01.24</time>
+                                    <p>凡人でも会社を辞められた「月10万円×◯店舗」の単純な計算式を公開。なぜレンタルスペースなら脱サラ可能なのか？そのロジックを解説します。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-23-winning-property-search-methods.html" class="post-thumb">
+                                    <img src="assets/SCR-20260123-irmr.jpeg" alt="まずアットホームでOK！レンタルスペースで儲かる物件を見つける全手順"
+                                        class="post-thumb-img">
+                                    <span class="category-badge">物件探し</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-23-winning-property-search-methods.html">まずアットホームでOK！レンタルスペースで儲かる物件を見つける全手順</a>
+                                    </h2>
+                                    <time datetime="2026-01-23">2026.01.23</time>
+                                    <p>良い物件が見つからないと悩んでいませんか？プロが実践しているアットホームや仲介業者を活用した「勝てる物件」の探し方を公開します。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-23-profit-over-100m-recommendations.html" class="post-thumb">
+                                    <img src="assets/SCR-20260123-foer.png" alt="収益1億超えのプロがいま出店したい！レンタルスペースの4ジャンル"
+                                        class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-23-profit-over-100m-recommendations.html">収益1億超えのプロがいま出店したい！レンタルスペースの4ジャンル</a>
+                                    </h2>
+                                    <time datetime="2026-01-23">2026.01.23</time>
+                                    <p>累計21店舗、利益1億円を突破したプロが本音で語る、今こそ参入すべき注目の4ジャンル。成功の鍵を徹底解説。
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-22-rental-space-reasons.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-22.png" alt="会社員こそレンタルスペースを選ぶべき5つの理由"
+                                        class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-22-rental-space-reasons.html">会社員こそレンタルスペースを選ぶべき5つの理由</a>
+                                    </h2>
+                                    <time datetime="2026-01-22">2026.01.22</time>
+                                    <p>「副業を始めたいけど時間がない」そんな会社員の方にレンタルスペース運営が最適な5つの理由を解説。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-21-dance-studio-interior.html" class="post-thumb">
+                                    <img src="assets/dance-studio-interior-eyecatch.jpg" alt="ダンススタジオの内装、設備・備品"
+                                        class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a href="articles/2026-01-21-dance-studio-interior.html">ダンススタジオの内装、設備・備品</a>
+                                    </h2>
+                                    <time datetime="2026-01-21">2026.01.21</time>
+                                    <p>リピート率を高めるための鏡の貼り方や床材の選び方、音響トラブルを防ぐ工夫など、実践的なスタジオ作りを解説します。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-20-self-introduction.html" class="post-thumb">
+                                    <img src="assets/self-introduction-eyecatch.png" alt="自己紹介" class="post-thumb-img">
+                                    <span class="category-badge">プロフィール</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a href="articles/2026-01-20-self-introduction.html">こんにちは、レンタルスペースおじさんです。</a>
+                                    </h2>
+                                    <time datetime="2026-01-20">2026.01.20</time>
+                                    <p>元製薬会社サラリーマンが、20部屋のレンタルスペースを運営するようになるまでの道のりをお話しします。</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="list-footer">
+                            <button class="btn-load-more" onclick="switchCategory('latest', '最新記事')">最新記事一覧に戻る</button>
+                        </div>
+                    </div>
 
-                            <a href="articles/2026-01-22-rental-space-reasons.html" class="post-thumb">
-                                <img src="assets/cover-2026-01-22.png" alt="会社員こそレンタルスペースを選ぶべき5つの理由"
-                                    class="post-thumb-img">
-                                <span class="category-badge">ノウハウ</span>
-                            </a>
-                            <div class="post-info">
-                                <h2><a href="articles/2026-01-22-rental-space-reasons.html">会社員こそレンタルスペースを選ぶべき5つの理由</a>
-                                </h2>
-                                <time datetime="2026-01-22">2026.01.22</time>
-                                <p>「副業を始めたいけど時間がない」そんな会社員の方にレンタルスペース運営が最適な5つの理由を解説。信用力を活かした物件確保や自動化の仕組みとは？</p>
-                            </div>
-                        </article>
-                        <article class="post-card">
+                    <!-- 脱サラの道のり -->
+                    <div class="post-list-container" id="posts-beginning">
+                        <div class="post-list">
+                            <article class="post-card">
+                                <a href="articles/2026-01-24-how-i-quit-my-job.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-24.png" alt="脱サラできた方法" class="post-thumb-img">
+                                    <span class="category-badge">マインド</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a href="articles/2026-01-24-how-i-quit-my-job.html">私が脱サラできた方法</a></h2>
+                                    <time datetime="2026-01-24">2026.01.24</time>
+                                    <p>凡人でも会社を辞められた「月10万円×◯店舗」の単純な計算式を公開します。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-22-rental-space-reasons.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-22.png" alt="会社員こそ選ぶべき理由" class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-22-rental-space-reasons.html">会社員こそレンタルスペースを選ぶべき5つの理由</a>
+                                    </h2>
+                                    <time datetime="2026-01-22">2026.01.22</time>
+                                    <p>時間のない会社員に最適な理由を解説。信用力を活かした物件確保とは？</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-20-self-introduction.html" class="post-thumb">
+                                    <img src="assets/self-introduction-eyecatch.png" alt="自己紹介" class="post-thumb-img">
+                                    <span class="category-badge">プロフィール</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a href="articles/2026-01-20-self-introduction.html">こんにちは、レンタルスペースおじさんです。</a>
+                                    </h2>
+                                    <time datetime="2026-01-20">2026.01.20</time>
+                                    <p>20部屋を運営するようになるまでの道のりをお話しします。</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="list-footer">
+                            <button class="btn-load-more" onclick="switchCategory('latest', '最新記事')">最新記事一覧に戻る</button>
+                        </div>
+                    </div>
 
-                            <a href="articles/2026-01-21-dance-studio-interior.html" class="post-thumb">
-                                <img src="assets/dance-studio-interior-eyecatch.jpg" alt="ダンススタジオの内装、設備・備品"
-                                    class="post-thumb-img">
-                                <span class="category-badge">ノウハウ</span>
-                            </a>
-                            <div class="post-info">
-                                <h2><a href="articles/2026-01-21-dance-studio-interior.html">ダンススタジオの内装、設備・備品</a></h2>
-                                <time datetime="2026-01-21">2026.01.21</time>
-                                <p>リピート率を高めるための鏡の貼り方や床材の選び方、音響トラブルを防ぐ工夫など、実践的なスタジオ作りを解説します。</p>
-                            </div>
-                        </article>
-                        <article class="post-card">
-                            <a href="articles/2026-01-20-self-introduction.html" class="post-thumb">
-                                <img src="assets/self-introduction-eyecatch.png" alt="自己紹介" class="post-thumb-img">
-                                <span class="category-badge">プロフィール</span>
-                            </a>
-                            <div class="post-info">
-                                <h2><a href="articles/2026-01-20-self-introduction.html">こんにちは、レンタルスペースおじさんです。</a></h2>
-                                <time datetime="2026-01-20">2026.01.20</time>
-                                <p>元製薬会社サラリーマンが、20部屋のレンタルスペースを運営するようになるまでの道のりをお話しします。</p>
-                            </div>
-                        </article>
-                        <!-- More articles will be added here -->
+                    <!-- 運営・集客面 -->
+                    <div class="post-list-container" id="posts-marketing">
+                        <div class="post-list">
+                            <article class="post-card">
+                                <a href="articles/2026-01-28-rental-studio-regular-use.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-28.jpg" alt="定期利用を増やす戦略" class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-28-rental-studio-regular-use.html">安定経営の鍵！ダンススタジオの定期利用を増やす5つの戦略</a>
+                                    </h2>
+                                    <time datetime="2026-01-28">2026.01.28</time>
+                                    <p>予約を勝手に埋めていく「サブスク化」の具体的な手法を公開します。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-26-rental-space-marketing.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-26.png" alt="集客方法 完全ガイド" class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a href="articles/2026-01-26-rental-space-marketing.html">レンタルスペースの集客方法
+                                            完全ガイド</a></h2>
+                                    <time datetime="2026-01-26">2026.01.26</time>
+                                    <p>ポータルサイト活用から自社HP誘導、Web広告まで、予約を増やす全手法を解説。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-24-hidden-side-hustle.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-24-2.png" alt="誰も調べない副業" class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-24-hidden-side-hustle.html">【月40回の衝撃】「誰も調べない副業」が美味しい</a>
+                                    </h2>
+                                    <time datetime="2026-01-24">2026.01.24</time>
+                                    <p>ライバル不在のブルーオーシャンで勝てる理由を解説します。</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="list-footer">
+                            <button class="btn-load-more" onclick="switchCategory('latest', '最新記事')">最新記事一覧に戻る</button>
+                        </div>
+                    </div>
+
+                    <!-- 物件選び・内装 -->
+                    <div class="post-list-container" id="posts-interior">
+                        <div class="post-list">
+                            <article class="post-card">
+                                <a href="articles/2026-01-23-winning-property-search-methods.html" class="post-thumb">
+                                    <img src="assets/SCR-20260123-irmr.jpeg" alt="物件を見つける全手順" class="post-thumb-img">
+                                    <span class="category-badge">物件探し</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-23-winning-property-search-methods.html">まずアットホームでOK！儲かる物件を見つける全手順</a>
+                                    </h2>
+                                    <time datetime="2026-01-23">2026.01.23</time>
+                                    <p>プロが実践しているアットホームや仲介業者の活用方法を公開します。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-21-dance-studio-interior.html" class="post-thumb">
+                                    <img src="assets/dance-studio-interior-eyecatch.jpg" alt="内装と設備"
+                                        class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a href="articles/2026-01-21-dance-studio-interior.html">ダンススタジオの内装、設備・備品</a>
+                                    </h2>
+                                    <time datetime="2026-01-21">2026.01.21</time>
+                                    <p>鏡の貼り方や床材選びなど、リピート率を高めるスタジオ作りを解説。</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="list-footer">
+                            <button class="btn-load-more" onclick="switchCategory('latest', '最新記事')">最新記事一覧に戻る</button>
+                        </div>
+                    </div>
+
+                    <!-- 収益・おすすめ -->
+                    <div class="post-list-container" id="posts-recommendations">
+                        <div class="post-list">
+                            <article class="post-card">
+                                <a href="articles/2026-01-27-rental-space-hp-creation.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-27.jpg" alt="公式HP作成方法" class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-27-rental-space-hp-creation.html">【手数料30%削減】レンタルスペースの公式HP作成方法</a>
+                                    </h2>
+                                    <time datetime="2026-01-27">2026.01.27</time>
+                                    <p>予約手数料を削減し、独自の予約システムを構築するアプローチを解説。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-25-rental-space-profit.html" class="post-thumb">
+                                    <img src="assets/cover-2026-01-25.jpg" alt="収益を公開" class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a href="articles/2026-01-25-rental-space-profit.html">レンタルスペースの収益を公開（月10万円）</a>
+                                    </h2>
+                                    <time datetime="2026-01-25">2026.01.25</time>
+                                    <p>初期投資の回収期間や利益率など、リアルな数字を公開します。</p>
+                                </div>
+                            </article>
+                            <article class="post-card">
+                                <a href="articles/2026-01-23-profit-over-100m-recommendations.html" class="post-thumb">
+                                    <img src="assets/SCR-20260123-foer.png" alt="注目の4ジャンル" class="post-thumb-img">
+                                    <span class="category-badge">ノウハウ</span>
+                                </a>
+                                <div class="post-info">
+                                    <h2><a
+                                            href="articles/2026-01-23-profit-over-100m-recommendations.html">プロがいま出店したい！注目の4ジャンル</a>
+                                    </h2>
+                                    <time datetime="2026-01-23">2026.01.23</time>
+                                    <p>累計1億円を突破したプロが本音で語る、成功の鍵を徹底解説。</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="list-footer">
+                            <button class="btn-load-more" onclick="switchCategory('latest', '最新記事')">最新記事一覧に戻る</button>
+                        </div>
                     </div>
                 </section>
             </section>
