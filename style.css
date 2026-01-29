@@ -824,6 +824,99 @@ blockquote.tip-box strong {
     }
 }
 
+/* Paywall and Note CTA */
+.note-paywall {
+    position: relative;
+    margin: 60px 0;
+    padding-top: 40px;
+    border-top: 2px dashed #ccc;
+}
+
+.note-paywall::before {
+    content: "このラインより上のエリアが無料で表示されます";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-color);
+    padding: 0 20px;
+    color: #999;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.paywall-overlay {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.paywall-badge {
+    display: inline-block;
+    background: #FF5722;
+    color: white;
+    padding: 4px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.paywall-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.paywall-content p {
+    color: #666;
+    margin-bottom: 30px !important;
+}
+
+.paywall-points {
+    text-align: left;
+    background: #fdfae6;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.paywall-points h4 {
+    margin-bottom: 15px;
+    color: #856404;
+    font-size: 1.1rem;
+}
+
+.paywall-points ul {
+    margin: 0 !important;
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+.paywall-points li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px !important;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.paywall-points li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.note-cta-box {
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
 /* note Link Button */
 .note-cta {
     background-color: #f9f9f9;
@@ -843,19 +936,36 @@ blockquote.tip-box strong {
 .btn-note-link {
     display: inline-block;
     background-color: #2cb696;
-    color: white;
-    padding: 15px 40px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    color: white !important;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1.2rem;
     box-shadow: 0 4px 15px rgba(44, 182, 150, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-top: 20px;
+    text-decoration: none;
 }
 
 .btn-note-link:hover {
-    background-color: #25a084;
-    transform: translateY(-2px);
+    transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(44, 182, 150, 0.4);
-    color: white;
+    background-color: #249a7f;
+    color: white !important;
+}
+
+@media (max-width: 600px) {
+    .paywall-overlay {
+        padding: 25px 20px;
+    }
+
+    .paywall-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .btn-note-link {
+        padding: 15px 25px;
+        font-size: 1rem;
+        width: 100%;
+    }
 }
