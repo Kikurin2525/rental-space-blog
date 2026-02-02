@@ -50,9 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
         window.open(`https://twitter.com/share?url=${url}&text=${text}`, '_blank', 'width=600,height=400');
     };
 
-    window.shareOnFacebook = function () {
+    window.shareOnThreads = function () {
         const url = encodeURIComponent(window.location.href);
-        window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=600,height=400');
+        const text = encodeURIComponent(document.title);
+        window.open(`https://www.threads.net/intent/post?text=${text}&url=${url}`, '_blank', 'width=600,height=400');
     };
 
     window.shareOnLine = function () {

@@ -764,8 +764,8 @@ blockquote.tip-box strong {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
-.share-btn.facebook {
-    background-color: #1877f2;
+.share-btn.threads {
+    background-color: #000;
 }
 
 .share-btn.tiktok {
