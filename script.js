@@ -85,4 +85,68 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Copy failed', err);
         });
     };
+
+    // Pagination Logic
+    const articlesPerPage = 10;
+    let currentPage = 1;
+
+    window.showPage = function (page) {
+        const postList = document.querySelector('#posts-latest .post-list');
+        if (!postList) return;
+
+        const articles = Array.from(postList.querySelectorAll('.post-card'));
+        const totalPages = Math.ceil(articles.length / articlesPerPage);
+
+        // Validate page number
+        if (page < 1) page = 1;
+        if (page > totalPages) page = totalPages;
+        currentPage = page;
+
+        // Hide all articles
+        articles.forEach(article => article.style.display = 'none');
+
+        // Show articles for current page
+        const startIndex = (page - 1) * articlesPerPage;
+        const endIndex = startIndex + articlesPerPage;
+        articles.slice(startIndex, endIndex).forEach(article => article.style.display = 'block');
+
+        // Update pagination buttons
+        updatePaginationButtons(totalPages);
+    };
+
+    function updatePaginationButtons(totalPages) {
+        const paginationContainer = document.querySelector('.pagination-controls');
+        if (!paginationContainer) return;
+
+        let html = '';
+
+        // Previous button
+        if (currentPage > 1) {
+            html += `<button class="pagination-btn" onclick="showPage(${currentPage - 1})">« 前へ</button>`;
+        }
+
+        // Page numbers
+        for (let i = 1; i <= totalPages; i++) {
+            if (i === currentPage) {
+                html += `<button class="pagination-btn active">${i}</button>`;
+            } else if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+                html += `<button class="pagination-btn" onclick="showPage(${i})">${i}</button>`;
+            } else if (i === currentPage - 3 || i === currentPage + 3) {
+                html += `<span class="pagination-ellipsis">...</span>`;
+            }
+        }
+
+        // Next button
+        if (currentPage < totalPages) {
+            html += `<button class="pagination-btn" onclick="showPage(${currentPage + 1})">次へ »</button>`;
+        }
+
+        paginationContainer.innerHTML = html;
+    }
+
+    // Initialize pagination on page load
+    const latestPostsContainer = document.querySelector('#posts-latest');
+    if (latestPostsContainer) {
+        showPage(1);
+    }
 });
